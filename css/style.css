@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+  }
+
+.container {
+    margin: 50px auto 0;
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+	flex-direction: column-reverse;
+	font-family: 'Varela Round', sans-serif;
+  }
+
+.body {
+	background: #457fb4;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	height: 100vh;
+}
+
+.aside {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 350px;
+}
+.h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.cards{
+    max-width: 960px;
+    min-height: 100px;
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+.card{
+    border-radius: 15px;
+    padding: 10px;
+
+}
+.card img{
+    max-width: 100%;
+}
+.card h2{
+    max-height: 30px;
+    max-width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 5px;
+    text-overflow: ellipsis;
+}
+.card .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    margin-top: 16px;
+}
+.card .info p{
+    font-size: 200px;
+}
+.card .info button{
+    padding: 5px;
+    font-size: 18px;
+    background-color: rgb(82, 82, 82);
+    color: white;
+    cursor: pointer;
+}
+
+.full {	
+	border-left: 5px solid #bdbe8259;
+}
+.main{
+	 border-left: 104px solid #bdbe8259;
+}
+.grey{
+    color: grey;
+}
+.Filter{
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+	color: rgb(105, 83, 83);
+}
+
+.filter{
+	display: block;
+}
+.top-header {
+	padding: 1.25em 3em 1.25em 2em;
+	background: rgba(255, 255, 255, 0.47);
+}
+.a{
+display: block;
+}
+.menu {
+	position: fixed;
+	top: 82px;
+	left: 5px;
+	 z-index: 2;
+}
+.menu ul li {
+	list-style-type:none;
+	border-bottom:1px solid #4c4c4c;
+}
+.menu ul li a{
+	padding:12px 22px;
+	  display: block;
+}
+.menu ul li a.active {
+	background:#dfb636;
+}
+.menu ul li a:hover {
+	background: #dfb636;
+}
+i.videos {
+	width:60px;
+	height:60px;
+	background: url('../images/img-sprite.png') no-repeat -60px -60px;
+	display:block;
+}
+i.videos1 {
+	width:60px;
+	height:60px;
+	background: url('../images/img-sprite.png')no-repeat -60px -60px ;
+	display:none;
+}
+
+i.watching {
+	width:60px;
+	height:60px;
+	background: url('../images/img-sprite.png') no-repeat -120px 0px;
+	display:block;
+}
+i.watching1 {
+	width:60px;
+	height:60px;
+	background: url('../images/img-sprite.png') no-repeat -120px -60px;
+	display:none;
+}
+
+.logo{
+	float: left;
+	width: 48%;
+}
+.logo a {
+	display: block;
+	float: left;
+}
+.logo p {
+	color:#D0D0D0;
+	font-size:1.35em;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	float: left;
+	border-left: 1px solid #D0D0D0;
+	padding:4px 0 4px 20px;
+	margin:8px 0 0px 20px;
+}
+
+
+.button{
+	background: #000;
+	padding: 10px;
+	cursor: pointer;
+	border: none;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	color: #FFF;
+	outline: none;
+	text-transform: uppercase;
+	display: block;
+	margin: 10px 0 0 0;
+	font-size: 0.875em;
+}
+.button:hover{
+	color:#888;
+}
+.right-content-heading-left{
+	padding: 11px 0;
+}
+.right-content-heading {
+	border-bottom: 1px solid #F1F0F6;
+	  margin: 0 0 3em 0;
+}
+.right-content-heading-right{
+	float:right;
+}
+.right-content-heading-left h3{
+	color: #888;
+	text-transform: uppercase;
+	display: block;
+}
+.pagenation{
+	text-align: center;
+}
+.pagenation ul li{
+	display:inline-block;
+}
+.pagenation ul li a{
+	background: #000;
+	padding: 10px;
+	cursor: pointer;
+	border: none;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+	color: #FFF;
+	outline: none;
+	text-transform: uppercase;
+	display: block;
+	font-size: 0.875em;
+}
+.pagenation ul li a:hover{
+	color: #888;
+}
+.pagenation ul li:last-child{
+	padding-left:1em;
+}
+.span_top{
+	background:#fff;
+}
+.reviews-section {
+	background: #fff;
+	padding:3em;
+	border-top:1px solid #000;
+}
+h3.head {
+	color: #000;
+	font-size: 2.5em;
+	font-weight: 700;
+}
+.movie-pic {
+	float:left;
+	width:24%;
+	margin-right:3%;
+}
+.movie-pic img {
+	width: 100%;
+}
+.review-info {
+	float:left;
+	width:73%;
+}
+.review {
+	margin-top: 4em;
+}
+a.span {
+	color: #000;
+	font-size: 1.8em;
+	text-decoration:none;
+	font-weight: 600;
+}
+p.dirctr {
+	color: #B1B1B1;
+	font-size: 1em;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+p.dirctr a {
+	color: #B1B1B1;
+	font-size: 1em;
+	font-weight: 400;
+	margin-bottom: 10px;
+	text-decoration:none;
+}
+.yrw {
+	margin: 2em 0;
+}
+p.ratingview {
+	color: #000;
+	font-size: 1em;
+	font-weight: 600;
+	float: left;
+	margin:10px 0px;
+}
+
